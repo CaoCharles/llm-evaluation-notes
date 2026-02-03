@@ -1,0 +1,59 @@
+/* LLM 評測筆記 - 深紫色主題樣式 */
+
+:root {
+  --md-primary-fg-color: #673ab7;
+  --md-primary-fg-color--light: #9575cd;
+  --md-primary-fg-color--dark: #512da8;
+  --md-accent-fg-color: #7c4dff;
+}
+
+/* 標題樣式 */
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset h2 {
+  border-bottom: 2px solid var(--md-primary-fg-color--light);
+  padding-bottom: 0.5rem;
+}
+
+/* 程式碼區塊 */
+.md-typeset code {
+  border-radius: 4px;
+}
+
+/* 表格樣式 */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--md-primary-fg-color--light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Admonition 樣式加強 */
+.md-typeset .admonition {
+  border-radius: 8px;
+}
+
+/* 卡片懸停效果 */
+.md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 4px 20px rgba(103, 58, 183, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 導航標籤樣式 */
+.md-tabs__link--active {
+  font-weight: 600;
+}
+
+/* 深色模式調整 */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #9575cd;
+  --md-accent-fg-color: #b388ff;
+}
