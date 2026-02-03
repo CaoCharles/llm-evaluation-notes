@@ -1,0 +1,61 @@
+nav:
+  - 首頁: index.md
+  
+  - 評測策略與框架設計:
+    - 簡介: strategy/index.md
+    - 評估指標體系: strategy/evaluation-metrics.md
+    - Responsible AI 標準:
+      - 公平性驗收標準: strategy/responsible-ai/fairness.md
+      - 偏見檢測與緩解: strategy/responsible-ai/bias.md
+      - 可解釋性要求: strategy/responsible-ai/explainability.md
+    - 自動化與 CI/CD 整合:
+      - 評測流程自動化: strategy/automation/workflow.md
+      - MLOps 整合指南: strategy/automation/mlops-integration.md
+
+  - 基準測試與數據治理:
+    - 簡介: benchmarking/index.md
+    - 黃金測試集管理:
+      - 數據集生命週期: benchmarking/golden-datasets/lifecycle.md
+      - 業務關鍵路徑覆蓋: benchmarking/golden-datasets/business-paths.md
+      - 邊緣案例設計: benchmarking/golden-datasets/edge-cases.md
+      - 對抗性樣本: benchmarking/golden-datasets/adversarial.md
+    - 評測工具實戰:
+      - RAGAS 完整指南: benchmarking/tools/ragas.ipynb
+      - DeepEval 完整指南: benchmarking/tools/deepeval.ipynb
+      - Arize Phoenix 完整指南: benchmarking/tools/arize-phoenix.ipynb
+      - 工具選型決策: benchmarking/tools/selection-guide.md
+
+  - 安全性與紅隊演練:
+    - 簡介: security/index.md
+    - AI 安全防護機制: security/defense-mechanism.md
+    - 紅隊演練指南:
+      - 演練流程與頻率: security/red-team/process.md
+      - 攻擊向量清單: security/red-team/attack-vectors.md
+    - 威脅防禦策略:
+      - Prompt Injection 防禦: security/threats/prompt-injection.md
+      - Jailbreaking 防禦: security/threats/jailbreaking.md
+      - PII 洩露防護: security/threats/pii-leakage.md
+    - 壓力測試標準: security/stress-testing.md
+
+  - 跨部門協作與優化:
+    - 簡介: collaboration/index.md
+    - 錯誤分析回饋迴圈:
+      - Feedback Loop 機制: collaboration/feedback-loop/mechanism.md
+      - Bad Case 根因分析: collaboration/feedback-loop/rca.md
+    - 優化建議指南:
+      - Fine-tuning 策略: collaboration/optimization/fine-tuning.md
+      - Prompt Engineering 優化: collaboration/optimization/prompt-engineering.md
+    - 團隊運營:
+      - 人才培養計畫: collaboration/team/talent-development.md
+      - 標準化文檔管理: collaboration/team/documentation.md
+
+  - 實戰案例庫:
+    - 簡介: cases/index.md
+    - RAG 系統案例: cases/rag-cases.md
+    - LLM 應用案例: cases/llm-cases.md
+    - 傳統 ML 案例: cases/ml-cases.md
+
+  - 附錄:
+    - 術語表: appendix/glossary.md
+    - 參考資源: appendix/references.md
+    - 變更日誌: appendix/changelog.md

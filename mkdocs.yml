@@ -1,0 +1,168 @@
+site_name: LLM 評測學習筆記
+site_url: https://CaoCharles.github.io/llm-evaluation-notes/
+site_description: LLM 與 AI 系統評測策略、基準測試、安全性與團隊協作指南
+site_author: Charles Cao
+
+theme:
+  name: material
+  language: zh-TW
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: 切換至深色模式
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: 切換至淺色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Noto Sans TC
+    code: JetBrains Mono
+
+plugins:
+  - search:
+      lang: zh
+  - glightbox
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+  - git-authors:
+      fallback_to_committer: false
+      enabled: !ENV [CI, false]
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CaoCharles
+
+extra_css:
+  - assets/css/extra.css
+
+copyright: Copyright &copy; 2026 Charles Cao - LLM 評測筆記
+
+nav:
+  - 首頁: index.md
+  
+  - 評測策略與框架設計:
+    - 簡介: strategy/index.md
+    - 評估指標體系: strategy/evaluation-metrics.md
+    - Responsible AI 標準:
+      - 公平性驗收標準: strategy/responsible-ai/fairness.md
+      - 偏見檢測與緩解: strategy/responsible-ai/bias.md
+      - 可解釋性要求: strategy/responsible-ai/explainability.md
+    - 自動化與 CI/CD 整合:
+      - 評測流程自動化: strategy/automation/workflow.md
+      - MLOps 整合指南: strategy/automation/mlops-integration.md
+
+  - 基準測試與數據治理:
+    - 簡介: benchmarking/index.md
+    - 黃金測試集管理:
+      - 數據集生命週期: benchmarking/golden-datasets/lifecycle.md
+      - 業務關鍵路徑覆蓋: benchmarking/golden-datasets/business-paths.md
+      - 邊緣案例設計: benchmarking/golden-datasets/edge-cases.md
+      - 對抗性樣本: benchmarking/golden-datasets/adversarial.md
+    - 評測工具實戰:
+      - RAGAS 完整指南: benchmarking/tools/ragas.md
+      - DeepEval 完整指南: benchmarking/tools/deepeval.md
+      - Arize Phoenix 完整指南: benchmarking/tools/arize-phoenix.md
+      - 工具選型決策: benchmarking/tools/selection-guide.md
+
+  - 安全性與紅隊演練:
+    - 簡介: security/index.md
+    - AI 安全防護機制: security/defense-mechanism.md
+    - 紅隊演練指南:
+      - 演練流程與頻率: security/red-team/process.md
+      - 攻擊向量清單: security/red-team/attack-vectors.md
+    - 威脅防禦策略:
+      - Prompt Injection 防禦: security/threats/prompt-injection.md
+      - Jailbreaking 防禦: security/threats/jailbreaking.md
+      - PII 洩露防護: security/threats/pii-leakage.md
+    - 壓力測試標準: security/stress-testing.md
+
+  - 跨部門協作與優化:
+    - 簡介: collaboration/index.md
+    - 錯誤分析回饋迴圈:
+      - Feedback Loop 機制: collaboration/feedback-loop/mechanism.md
+      - Bad Case 根因分析: collaboration/feedback-loop/rca.md
+    - 優化建議指南:
+      - Fine-tuning 策略: collaboration/optimization/fine-tuning.md
+      - Prompt Engineering 優化: collaboration/optimization/prompt-engineering.md
+    - 團隊運營:
+      - 人才培養計畫: collaboration/team/talent-development.md
+      - 標準化文檔管理: collaboration/team/documentation.md
+
+  - 實戰案例庫:
+    - 簡介: cases/index.md
+    - RAG 系統案例: cases/rag-cases.md
+    - LLM 應用案例: cases/llm-cases.md
+    - 傳統 ML 案例: cases/ml-cases.md
+
+  - 研究前沿:
+    - 簡介: research/index.md
+    - 每月論文速報:
+        - 2026-M01: research/monthly/2026/m01.md
+        - 2026-M02: research/monthly/2026/m02.md
+    - 主題深度解析:
+        - 評測方法論:
+            - LLM-as-Judge: research/topics/llm-as-judge.md
+            - 自動化評測框架: research/topics/auto-evaluation.md
+        - 安全與對齊:
+            - 紅隊攻防: research/topics/red-teaming.md
+            - 對齊評估: research/topics/alignment.md
+        - RAG 評測:
+            - 檢索品質: research/topics/retrieval-quality.md
+            - 生成品質: research/topics/generation-quality.md
+    - 經典必讀: research/classics.md
+
+  - 附錄:
+    - 術語表: appendix/glossary.md
+    - 參考資源: appendix/references.md
+    - 變更日誌: appendix/changelog.md
