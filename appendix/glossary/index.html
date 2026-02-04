@@ -3079,10 +3079,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
+  <a href="#c-d" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C
+        C-D
       
     </span>
   </a>
@@ -3090,10 +3090,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#d-f" class="md-nav__link">
+  <a href="#e-f" class="md-nav__link">
     <span class="md-ellipsis">
       
-        D-F
+        E-F
       
     </span>
   </a>
@@ -3112,10 +3112,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#m-r" class="md-nav__link">
+  <a href="#m-p" class="md-nav__link">
     <span class="md-ellipsis">
       
-        M-R
+        M-P
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q-R
       
     </span>
   </a>
@@ -3254,10 +3265,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
+  <a href="#c-d" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C
+        C-D
       
     </span>
   </a>
@@ -3265,10 +3276,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#d-f" class="md-nav__link">
+  <a href="#e-f" class="md-nav__link">
     <span class="md-ellipsis">
       
-        D-F
+        E-F
       
     </span>
   </a>
@@ -3287,10 +3298,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#m-r" class="md-nav__link">
+  <a href="#m-p" class="md-nav__link">
     <span class="md-ellipsis">
       
-        M-R
+        M-P
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q-R
       
     </span>
   </a>
@@ -3337,7 +3359,7 @@
     <span class="twemoji">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span style="font-weight: 500;">更新:</span> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年2月3日 18:15:07 UTC">2026年2月3日</span>
+    <span style="font-weight: 500;">更新:</span> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年2月3日 18:30:53 UTC">2026年2月3日</span>
   </span>
   
 
@@ -3356,17 +3378,85 @@
 
 
 <h1 id="_1">術語表</h1>
-<blockquote>
-<p>🚧 <strong>內容待補充</strong></p>
-</blockquote>
-<p>本頁將彙整 LLM 評測領域的常用術語。</p>
+<p>LLM 評測領域常用術語對照與解釋。</p>
 <h2 id="a">A</h2>
+<dl>
+<dt><strong>Accuracy（準確率）</strong></dt>
+<dd>預測正確的樣本數佔總樣本數的比例。</dd>
+<dt><strong>Adversarial Examples（對抗性樣本）</strong></dt>
+<dd>刻意設計用來測試模型穩健性的輸入樣本。</dd>
+<dt><strong>Answer Relevancy（答案相關性）</strong></dt>
+<dd>評估回答與問題相關程度的指標。</dd>
+</dl>
 <h2 id="b">B</h2>
-<h2 id="c">C</h2>
-<h2 id="d-f">D-F</h2>
+<dl>
+<dt><strong>Bias（偏見）</strong></dt>
+<dd>模型輸出中對特定群體的不公平傾向。</dd>
+<dt><strong>Benchmark（基準測試）</strong></dt>
+<dd>用於評估模型表現的標準化測試集合。</dd>
+</dl>
+<h2 id="c-d">C-D</h2>
+<dl>
+<dt><strong>Context（上下文）</strong></dt>
+<dd>提供給 LLM 的背景資訊，用於生成回答。</dd>
+<dt><strong>Context Precision（上下文精確度）</strong></dt>
+<dd>檢索結果中相關資訊排序是否靠前。</dd>
+<dt><strong>CoT (Chain of Thought)（思維鏈）</strong></dt>
+<dd>引導模型逐步推理的 Prompt 技術。</dd>
+</dl>
+<h2 id="e-f">E-F</h2>
+<dl>
+<dt><strong>Embedding（向量嵌入）</strong></dt>
+<dd>將文字轉換為數值向量的表示方法。</dd>
+<dt><strong>Exact Match（完全匹配）</strong></dt>
+<dd>模型輸出與標準答案完全一致的比例。</dd>
+<dt><strong>F1 Score</strong></dt>
+<dd>Precision 和 Recall 的調和平均數。</dd>
+<dt><strong>Faithfulness（忠實度）</strong></dt>
+<dd>回答是否忠於提供的上下文資訊。</dd>
+<dt><strong>Few-shot</strong></dt>
+<dd>在 Prompt 中提供少量示例引導模型。</dd>
+</dl>
 <h2 id="g-l">G-L</h2>
-<h2 id="m-r">M-R</h2>
+<dl>
+<dt><strong>Groundedness（可追溯性）</strong></dt>
+<dd>回答中的陳述是否可追溯到來源資訊。</dd>
+<dt><strong>Hallucination（幻覺）</strong></dt>
+<dd>模型生成不基於事實或上下文的虛假資訊。</dd>
+<dt><strong>Jailbreaking（越獄）</strong></dt>
+<dd>繞過 AI 安全限制的攻擊技術。</dd>
+<dt><strong>LLM (Large Language Model)</strong></dt>
+<dd>大型語言模型。</dd>
+</dl>
+<h2 id="m-p">M-P</h2>
+<dl>
+<dt><strong>PII (Personally Identifiable Information)</strong></dt>
+<dd>個人可識別資訊。</dd>
+<dt><strong>Precision（精確率）</strong></dt>
+<dd>預測為正類的樣本中，實際為正類的比例。</dd>
+<dt><strong>Prompt Injection（提示注入）</strong></dt>
+<dd>通過輸入操縱 LLM 行為的攻擊方式。</dd>
+</dl>
+<h2 id="q-r">Q-R</h2>
+<dl>
+<dt><strong>RAG (Retrieval-Augmented Generation)</strong></dt>
+<dd>檢索增強生成，結合檢索和生成的技術架構。</dd>
+<dt><strong>Recall（召回率）</strong></dt>
+<dd>實際為正類的樣本中，被正確預測的比例。</dd>
+<dt><strong>Reranker（重排序器）</strong></dt>
+<dd>對檢索結果進行二次排序的模型。</dd>
+<dt><strong>ROUGE</strong></dt>
+<dd>評估文本摘要品質的指標系列。</dd>
+</dl>
 <h2 id="s-z">S-Z</h2>
+<dl>
+<dt><strong>Semantic Similarity（語義相似度）</strong></dt>
+<dd>兩段文字在語義層面的相似程度。</dd>
+<dt><strong>Toxicity（毒性）</strong></dt>
+<dd>輸出中有害、冒犯或不當內容的程度。</dd>
+<dt><strong>Zero-shot</strong></dt>
+<dd>不提供示例，直接讓模型執行任務。</dd>
+</dl>
 
 
 
